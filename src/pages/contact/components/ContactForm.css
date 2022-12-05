@@ -1,0 +1,19 @@
+/* .my-contact-form label.form-label {
+	font-size: 8px !important;
+} */
+
+/*=== send button ===*/
+.my-contact-form Button {
+	background-color: #0f117a;
+	box-shadow: 0 9px #1005;
+	width: 150px;
+	height: 75px;
+}
+.my-contact-form Button:hover {
+	background-color: #3e8e41;
+}
+.my-contact-form Button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #555;
+	transform: translateY(4px);
+}

@@ -1,0 +1,4 @@
+.home-card-group h1 {
+	font: var(--title-font);
+	text-shadow: var(--text-shadow-dark);
+}
