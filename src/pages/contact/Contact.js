@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import ContactForm from './components/ContactForm';
+import ContactForm from '../../utils/ContactForm';
 import './Contact.css';
 
 const Contact = () => {
@@ -23,7 +23,7 @@ const Contact = () => {
 	return (
 		<Container
 			as='section'
-			className='mb-5 contact-us'>
+			className='mb-5 contact-us text-center'>
 			<Row className='align-items-center'>
 				<Col
 					className='mt-5'
@@ -34,15 +34,15 @@ const Contact = () => {
 				</Col>
 			</Row>
 
-			<Row className='bg-dark mb-5 contact-address mx-auto'>
+			<Row className='bg-kulay2 mb-5 contact-address mx-auto text-kulay1 w-75'>
 				<Col
 					as={'address'}
-					className='mt-3'>
-					<h4>Company Name</h4>
+					className='mt-3 lh-lg text-center'>
+					<h2 className='mt-3'>Company Name</h2>
 
-					<p>Address Here</p>
+					<p className=''>Address Here</p>
 
-					<p>City, TX 55555</p>
+					<p className=''>City, TX 55555</p>
 
 					<a
 						href='mailto:@gmail.com'

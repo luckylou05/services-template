@@ -4,13 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './custom.scss';
 import './index.css';
 
-// import NavBar from './components/navbar/NavBar';
-import Footer from './utils/footer/Footer';
+import App from './App';
+import Footer from './utils/Footer';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Services from './pages/services/Services';
+import Services2 from './pages/services/Services2';
 import Contact from './pages/contact/Contact';
-import App from './App';
+import Reviews from './pages/reviews/Reviews';
 // import logo from './logo.svg';
 import reportWebVitals from './reportWebVitals';
 
@@ -19,13 +20,7 @@ root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<App />
-			{/* <NavBar /> */}
-			{/* <TopSpacer /> */}
 			<Routes>
-				{/* <Route
-					path='/'
-					element={<App />}
-				/> */}
 				<Route
 					path='/'
 					index
@@ -40,8 +35,16 @@ root.render(
 					element={<Services />}
 				/>
 				<Route
+					path='services2'
+					element={<Services2 />}
+				/>
+				<Route
 					path='contact'
 					element={<Contact />}
+				/>
+				<Route
+					path='reviews'
+					element={<Reviews />}
 				/>
 			</Routes>
 			<Footer />

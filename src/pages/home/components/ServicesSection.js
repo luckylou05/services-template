@@ -4,15 +4,13 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
 
-import './HomeCardGroup.css';
-
-const HomeCardGroup = () => {
+const ServicesSection = () => {
 	return (
 		<Container className='home-card-group'>
-			<h1 className='mt-5'>Services</h1>
+			<h1 className='mt-5 shadow-text-itim text-center'>Services</h1>
 			<hr className='mx-auto w-25' />
 			<CardGroup className='row my-5'>
-				<Card className='col-12 col-lg-4'>
+				<Card className='col-12 col-md-4'>
 					<Card.Img
 						variant='top'
 						src='holder.js/100px160'
@@ -35,7 +33,7 @@ const HomeCardGroup = () => {
 					</Card.Footer>
 				</Card>
 
-				<Card className='col-12 col-lg-4'>
+				<Card className='col-12 col-md-4'>
 					<Card.Img
 						variant='top'
 						src='holder.js/100px160'
@@ -58,7 +56,7 @@ const HomeCardGroup = () => {
 					</Card.Footer>
 				</Card>
 
-				<Card className='col-12 col-lg-4'>
+				<Card className='col-12 col-md-4'>
 					<Card.Img
 						variant='top'
 						src='holder.js/100px160'
@@ -85,7 +83,7 @@ const HomeCardGroup = () => {
 			{/*,,'===D=I=V=I=D=I=N=G===L=I=N=E=== === ===*/}
 
 			<CardGroup className='row my-5'>
-				<Card className='col-12 col-lg-4'>
+				<Card className='col-12 col-md-4'>
 					<Card.Img
 						variant='top'
 						src='holder.js/100px160'
@@ -108,7 +106,7 @@ const HomeCardGroup = () => {
 					</Card.Footer>
 				</Card>
 
-				<Card className='col-12 col-lg-4'>
+				<Card className='col-12 col-md-4'>
 					<Card.Img
 						variant='top'
 						src='holder.js/100px160'
@@ -131,7 +129,7 @@ const HomeCardGroup = () => {
 					</Card.Footer>
 				</Card>
 
-				<Card className='col-12 col-lg-4'>
+				<Card className='col-12 col-md-4'>
 					<Card.Img
 						variant='top'
 						src='holder.js/100px160'
@@ -158,4 +156,4 @@ const HomeCardGroup = () => {
 	);
 };
 
-export default HomeCardGroup;
+export default ServicesSection;

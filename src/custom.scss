@@ -1,14 +1,172 @@
-// Override default variables before the import
-// $body-bg: #fff;
-$primary-bg: #fff;
-$secondary-bg: #333;
-$itim: #333;
+/*===INFO:► custom variables => transfer these colors to them colors if you want to use them outside of this file ◄===*/
+
+/*=== colors i might use ◄===*/
+$pilak: #333;
 $puti: #fff;
 $pula: #cd5c5c;
 $asul: #0f117a;
+$langit: rgb(100, 149, 237);
+$itim: #000000;
 $berde: #3e8e41;
+$kahel: #ff8c00;
+$aninag: transparent;
 
-$body-bg: $primary-bg;
+/*===INFO:► colors with purpose ◄===*/
 
-// Import Bootstrap and its default variables
+/* theme colors */
+$kulay1: $puti; //background-1, text-2
+$kulay2: $pilak; //background-2, text-1
+$kulay3: $pula;
+$kulay4: $itim;
+$kulay5: $langit;
+$kulay6: $asul;
+$kulay7: $berde;
+
+/*,,'===D=I=V=I=D=I=N=G===L=I=N=E=== === ===*/
+/*===START:► Override default variables before the import ◄===*/
+
+/*===INFO:► colors ◄===*/
+$theme-colors: (
+	// colors
+	'itim': $itim,
+	'puti': $puti,
+	'pilak': $pilak,
+	'pula': $pula,
+	'asul': $asul,
+	'langit': $langit,
+	'berde': $berde,
+	'kahel': $kahel,
+	'aninag': $aninag,
+
+	// theme colors ►
+	// background-1, text-2
+	'kulay1': $kulay1,
+	// background-2, text-1
+	'kulay2': $kulay2,
+	'kulay3': $kulay3,
+	'kulay4': $kulay4,
+	// navbar link text
+	'kulay5': $kulay5,
+	'kulay6': $kulay6
+);
+/*===START:► utilities ◄===*/
+
+/*===INFO:► shadows ◄===*/
+$box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba(black, 0.075);
+$box-shadow-inset: inset 0 1px 2px rgba(black, 0.075);
+$box-shadow-lg: 0px 5px 10px 3px rgba(0, 0, 0, 0.75);
+$box-shadow-sky: 0px 5px 20px 3px rgba(100, 149, 237, 0.75);
+
+$shadow-text-puti: 1.5px 1.5px 3px rgba(255, 255, 255, 0.75);
+$shadow-text-itim: 1.5px 1.5px 3px rgba(0, 0, 0, 0.75);
+
+$utilities: (
+	'shadow': (
+		property: box-shadow,
+		class: shadow,
+		values: (
+			null: $box-shadow,
+			sm: $box-shadow-sm,
+			lg: $box-shadow-lg,
+			sky: $box-shadow-sky,
+
+			none: none,
+		),
+	),
+	'shadow-text': (
+		property: text-shadow,
+		class: shadow-text,
+		values: (
+			puti: $shadow-text-puti,
+			itim: $shadow-text-itim,
+		),
+	),
+);
+
+/*===INFO:► grid breakpoints ◄===*/
+$grid-breakpoints: (
+	xs: 0,
+	xsm: 375px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+	xxxl: 2560px,
+);
+
+/*===INFO:► options ◄===*/
+$enable-shadows: true;
+$enable-negative-margins: true;
+$enable-gradients: true;
+
+/*===INFO:► typography ◄===*/
+$headings-font-family: 'Arial Black', 'Arial', 'Roboto', sans-serif;
+$sm-font: normal normal 400 normal 16px/1.6 'Roboto', sans-serif;
+$md-font: normal normal 500 normal 28px/1.6 'Roboto', sans-serif;
+$lg-font: small-caps 700 expanded 48px/1.6 'Arial Black', 'Arial', 'Roboto', sans-serif;
+
+/*===INFO:► globals ◄===*/
+$body-bg: $kulay1;
+
+body {
+	font: $md-font;
+	width: 100vw;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/*,',===INFO:► media-queries ◄===*/
+
+/*,',=== =>375px xs:iphone11Pro  ===*/
+//  @media screen and (min-width: 375px) {
+
+// }
+
+/*,',=== =>576px sm:iphone12 ===*/
+@media screen and (min-width: 576px) {
+	.home-hero-slides p {
+		// font-size: larger;
+	}
+}
+
+/*,',=== =>768px md:tablet ===*/
+/* @media (min-width: 768px) {
+
+} */
+
+/*,',=== =>992px lg:tablet ===*/
+/* @media (min-width: 992px) {
+
+} */
+
+/*,',=== =>1400px xl:laptop ===*/
+/* @media (min-width: 1200px) {
+
+} */
+
+/*,',=== =>1700px xxl:desktop ===*/
+/* @media (min-width: 1700px) {
+
+} */
+
+/*,',=== =>2560px xxxl:desktop+ ===*/
+/* @media (min-width: 2560px) {
+
+} */
+/*===START:► page colors for theming if wanted to later ◄===*/
+/*===INFO:► Page: Utilities/Components ◄===*/
+/*===INFO:► Page: Home ◄===*/
+/*===INFO:► Page: About ◄===*/
+/*===INFO:► Page: Services ◄===*/
+/*===INFO:► Page: Contact ◄===*/
+/*===INFO:► Page: Reviews ◄===*/
+
+/*===REQUIRED:► Import Bootstrap and its default variables ◄===*/
 @import '~bootstrap/scss/bootstrap.scss';
+// Required
+// @import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/mixins';
