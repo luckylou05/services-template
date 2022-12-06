@@ -1,11 +1,12 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+
 import HeroSlides from './components/HeroSlides';
-import HomeCardGroup from './components/HomeCardGroup';
+import ServicesSection from './components/ServicesSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
 
-import About from '../about/About';
-import Contact from '../contact/Contact';
-
+// import ReviewsSlider from '../../utils/ReviewsSlider';
 import './Home.css';
 
 export const Home = () => {
@@ -15,12 +16,12 @@ export const Home = () => {
 			fluid={true}
 			className='px-0'>
 			<HeroSlides />
-			{/* <hr className='' /> */}
-			<HomeCardGroup />
+			<ServicesSection />
+			{/* <ReviewsSlider /> */}
 			<hr className='' />
-			<About />
+			<AboutSection />
 			<hr className='' />
-			<Contact />
+			<ContactSection />
 		</Container>
 	);
 };

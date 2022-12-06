@@ -2,7 +2,7 @@
 const TopSpacer = () => {
 	return (
 		<div
-			className='position-relative top-0 bg-transparent'
+			className='pages-top-spacer bg-kulay2'
 			style={{ paddingTop: '50px' }}></div>
 	);
 };

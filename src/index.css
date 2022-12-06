@@ -9,50 +9,21 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* --primary-color: #fff; */
-	/* --secondary-color: #333; */
-	--tertiary-color: #cd5c5c;
-	--text-shadow-light: 3px 3px 6px rgba(255, 255, 255, 0.25);
-	--text-shadow-dark: 3px 3px 6px rgba(0, 0, 0, 1);
-	--box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.75), 0 6px 8px rgba(0, 0, 0, 0.75);
-	--normal-font: normal normal 400 normal 16px/1.6 'Roboto', sans-serif;
-	--medium-font: normal normal 500 normal 28px/1.6 'Roboto', sans-serif;
-	--title-font: small-caps 700 expanded 48px/1.6 'Arial Black', 'Arial', 'Roboto', sans-serif;
 }
+
 html {
-	scroll-behavior: smooth;
 	scroll-padding-top: 75px;
 }
 
 body {
-	font: var(--normal-font);
-	/* background-color: var(--primary-color); */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	/* align-items: center; */
-	/* justify-content: center; */
-	width: 100vw;
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
 }
 
-.container {
+/* .container {
 	width: 100%;
 	padding: 0;
 	text-align: center;
-}
-
-/* .vessel {
-	background-color: var(--tertiary-color);
-	border-radius: 10px;
-	box-shadow: var(--box-shadow);
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	max-width: 100%;
-	width: 800px;
 } */
 
 code {
@@ -80,17 +51,21 @@ ul {
 	line-height: normal;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 img {
 	width: 100%;
 	height: auto;
 }
+
 button {
 	border: 0;
 	background-color: transparent;
 }
+
 /* :active {
 	transform: scale(0.98);
 } */
@@ -102,43 +77,36 @@ button {
 p.success {
 	color: green;
 }
+
 p.danger {
 	color: red;
 }
 
-/*,',===START: media queries ===*/
+.contact-address h4 {
+	font: var(--medium-font);
+}
+.contact-address {
+	border-radius: 10px;
+	color: var(--tertiary-color);
+	width: 50%;
+}
 
-/*,',=== =>375px xs:iphone11Pro  ===*/
-/* @media screen and (min-width: 375px) {
+.contact-address a {
+	color: cornflowerblue;
+}
+/*,,'===D=I=V=I=D=I=N=G===L=I=N=E=== === ===*/
 
-} */
-
-/*,',=== =>576px sm:iphone12 ===*/
-/* @media screen and (min-width: 576px) {
-
-} */
-
-/*,',=== =>768px md:tablet ===*/
-/* @media (min-width: 768px) {
-
-} */
-
-/*,',=== =>992px lg:tablet ===*/
-/* @media (min-width: 992px) {
-
-} */
-
-/*,',=== =>1400px xl:laptop ===*/
-/* @media (min-width: 1200px) {
-
-} */
-
-/*,',=== =>1700px xxl:desktop ===*/
-/* @media (min-width: 1700px) {
-
-} */
-
-/*,',=== =>2560px xxxl:desktop+ ===*/
-/* @media (min-width: 2560px) {
-
-} */
+.my-contact-form Button {
+	background-color: #0f117a;
+	box-shadow: 0 9px #1005;
+	width: 150px;
+	height: 75px;
+}
+.my-contact-form Button:hover {
+	background-color: #3e8e41;
+}
+.my-contact-form Button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #555;
+	transform: translateY(4px);
+}
