@@ -1,65 +1,73 @@
 /*===INFO:► custom variables => transfer these colors to them colors if you want to use them outside of this file ◄===*/
 
+/*===► default colors ◄===*/
+
 /*=== colors i might use ◄===*/
-$pilak: #333;
-$puti: #fff;
-$pula: #cd5c5c;
-$asul: #0f117a;
-$langit: rgb(100, 149, 237);
-$itim: #000000;
-$berde: #3e8e41;
-$kahel: #ff8c00;
-$aninag: transparent;
+$charcoal: #333;
+$white: #fff;
+$indianred: #cd5c5c;
+$blue: #0f117a;
+$sky: rgb(100, 149, 237);
+$black: #000000;
+$lime: rgb(0, 255, 0);
+$darkorange: #ff8c00;
+$transparent: transparent;
 
 /*===INFO:► colors with purpose ◄===*/
 
 /* theme colors */
-$kulay1: $puti; //background-1, text-2
-$kulay2: $pilak; //background-2, text-1
-$kulay3: $pula;
-$kulay4: $itim;
-$kulay5: $langit;
-$kulay6: $asul;
-$kulay7: $berde;
+$color1: $white; //background-1, text-2
+$color2: $charcoal; //background-2, text-1
+$color3: $indianred;
+$color4: $black;
+$color5: $sky;
+$color6: $blue;
+$color7: $lime;
 
 /*,,'===D=I=V=I=D=I=N=G===L=I=N=E=== === ===*/
 /*===START:► Override default variables before the import ◄===*/
 
-/*===INFO:► colors ◄===*/
+/*===INFO:► colors and default theme colors ◄===*/
+
 $theme-colors: (
 	// colors
-	'itim': $itim,
-	'puti': $puti,
-	'pilak': $pilak,
-	'pula': $pula,
-	'asul': $asul,
-	'langit': $langit,
-	'berde': $berde,
-	'kahel': $kahel,
-	'aninag': $aninag,
+	'black': $black,
+	'white': $white,
+	'charcoal': $charcoal,
+	'indianred': $indianred,
+	'blue': $blue,
+	'sky': $sky,
+	'lime': $lime,
+	'darkorange': $darkorange,
+	'transparent': $transparent,
 
 	// theme colors ►
 	// background-1, text-2
-	'kulay1': $kulay1,
+	'color1': $color1,
 	// background-2, text-1
-	'kulay2': $kulay2,
-	'kulay3': $kulay3,
-	'kulay4': $kulay4,
+	'color2': $color2,
+	'color3': $color3,
+	'color4': $color4,
 	// navbar link text
-	'kulay5': $kulay5,
-	'kulay6': $kulay6
+	'color5': $color5,
+	'color6': $color6,
+	'color7': $color7
 );
 /*===START:► utilities ◄===*/
 
 /*===INFO:► shadows ◄===*/
 $box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
-$box-shadow-sm: 0 0.125rem 0.25rem rgba(black, 0.075);
+$box-shadow-sm: 0px 2.5px 10px 3px rgba(0, 0, 0, 0.75);
 $box-shadow-inset: inset 0 1px 2px rgba(black, 0.075);
 $box-shadow-lg: 0px 5px 10px 3px rgba(0, 0, 0, 0.75);
 $box-shadow-sky: 0px 5px 20px 3px rgba(100, 149, 237, 0.75);
+$box-shadow-lime: 0px 5px 20px 5px rgba(0, 255, 0, 0.75);
 
-$shadow-text-puti: 1.5px 1.5px 3px rgba(255, 255, 255, 0.75);
-$shadow-text-itim: 1.5px 1.5px 3px rgba(0, 0, 0, 0.75);
+/* text */
+$shadow-text-white: 1.5px 1.5px 3px rgba(255, 255, 255, 0.75);
+$shadow-text-black: 1.5px 1.5px 3px rgba(0, 0, 0, 0.75);
+$shadow-text-lime: 1.5px 1.5px 3px rgba(0, 255, 0, 0.75);
+$shadow-text-nav: 0.5px 0.5px 3px rgba(0, 0, 0, 0.75);
 
 $utilities: (
 	'shadow': (
@@ -70,16 +78,17 @@ $utilities: (
 			sm: $box-shadow-sm,
 			lg: $box-shadow-lg,
 			sky: $box-shadow-sky,
-
-			none: none,
+			lime: $box-shadow-lime,
 		),
 	),
 	'shadow-text': (
 		property: text-shadow,
 		class: shadow-text,
 		values: (
-			puti: $shadow-text-puti,
-			itim: $shadow-text-itim,
+			white: $shadow-text-white,
+			black: $shadow-text-black,
+			lime: $shadow-text-lime,
+			nav: $shadow-text-nav,
 		),
 	),
 );
@@ -100,6 +109,7 @@ $grid-breakpoints: (
 $enable-shadows: true;
 $enable-negative-margins: true;
 $enable-gradients: true;
+$enable-important-utilities: false;
 
 /*===INFO:► typography ◄===*/
 $headings-font-family: 'Arial Black', 'Arial', 'Roboto', sans-serif;
@@ -108,11 +118,11 @@ $md-font: normal normal 500 normal 28px/1.6 'Roboto', sans-serif;
 $lg-font: small-caps 700 expanded 48px/1.6 'Arial Black', 'Arial', 'Roboto', sans-serif;
 
 /*===INFO:► globals ◄===*/
-$body-bg: $kulay1;
+$body-bg: $color1;
 
 body {
 	font: $md-font;
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -127,11 +137,9 @@ body {
 // }
 
 /*,',=== =>576px sm:iphone12 ===*/
-@media screen and (min-width: 576px) {
-	.home-hero-slides p {
-		// font-size: larger;
-	}
-}
+// @media screen and (min-width: 576px) {
+
+// }
 
 /*,',=== =>768px md:tablet ===*/
 /* @media (min-width: 768px) {
@@ -139,9 +147,20 @@ body {
 } */
 
 /*,',=== =>992px lg:tablet ===*/
-/* @media (min-width: 992px) {
-
-} */
+@media (min-width: 992px) {
+	/*===► hero image caption and button ◄===*/
+	.home-hero-slides .hero-caption-group p {
+		font-size: 40px;
+	}
+	.hero-caption-group .ripple-effect1,
+	.hero-caption-group .ripple-effect2,
+	.hero-caption-group .ripple-effect3 {
+		font-weight: 700;
+		font-size: 32px;
+		padding: 20px 20px;
+		width: 250px;
+	}
+}
 
 /*,',=== =>1400px xl:laptop ===*/
 /* @media (min-width: 1200px) {
@@ -158,8 +177,61 @@ body {
 
 } */
 /*===START:► page colors for theming if wanted to later ◄===*/
+// .dark-mode {
+// 	background-color: #333;
+// 	color: $white;
+// }
+// body.dark-mode .home-card-group div,
+// body.dark-mode nav.my-nav-bar .navbar-nav a,
+// body.dark-mode nav.my-nav-bar .navbar-nav .dropdown-menu,
+// body.dark-mode nav.my-nav-bar {
+// 	background: #333;
+// 	color: $white;
+// }
 /*===INFO:► Page: Utilities/Components ◄===*/
 /*===INFO:► Page: Home ◄===*/
+// body.dark-mode main .my-contact-form,
+// body.dark-mode main .card-body {
+// 	color: $black;
+// }
+// body.dark-mode main .home-contact-section .big-logo {
+// 	box-shadow: $box-shadow-lime;
+// }
+
+// body.dark-mode footer {
+// 	background: $black;
+// 	color: $white;
+// }
+
+// body.logo-background-mode {
+// 	background: url('./assets/images/dark.svg');
+// 	background-position: center fixed;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+// body.dark-mode .home-card-group div .card-text,
+// body.dark-mode .home-card-group div button,
+// body.dark-mode .about-section p,
+// body.logo-background-mode .about-section p,
+// body.logo-background-mode .about-section {
+// 	color: $white;
+// 	z-index: 99;
+// }
+// .home-card-group div button:hover,
+// body.logo-background-mode .home-card-group .card-footer button:hover,
+// body.dark-mode .home-card-group .card-footer button:hover {
+// 	color: $lime;
+// }
+// body.logo-background-mode .home-card-group,
+// body.logo-background-mode .home-card-group div.card-body,
+// body.logo-background-mode .home-card-group .card-footer,
+// body.logo-background-mode .home-card-group .card-footer button {
+// 	background: $charcoal;
+// 	color: $white;
+// }
+// .big-logo:hover {
+// 	transform: scale(1.1);
+// }
 /*===INFO:► Page: About ◄===*/
 /*===INFO:► Page: Services ◄===*/
 /*===INFO:► Page: Contact ◄===*/

@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Services Company Website Template using Create React App
+
+## (Work In Progress)
+
+### npm update after cloning. Add to or delete any packages to currently installed to your preferences
+
+### template is using custom scss
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -2,8 +2,8 @@
 const TopSpacer = () => {
 	return (
 		<div
-			className='pages-top-spacer bg-kulay2'
-			style={{ paddingTop: '50px' }}></div>
+			className='pages-top-spacer bg-color2'
+			style={{ paddingTop: '63px' }}></div>
 	);
 };
 

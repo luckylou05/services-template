@@ -20,12 +20,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* .container {
-	width: 100%;
-	padding: 0;
-	text-align: center;
-} */
-
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -82,31 +76,32 @@ p.danger {
 	color: red;
 }
 
-.contact-address h4 {
+/*,,'===D=I=V=I=D=I=N=G===L=I=N=E=== === ===*/
+
+/* .contact-address h4 {
 	font: var(--medium-font);
-}
-.contact-address {
+} */
+/* .contact-address {
 	border-radius: 10px;
 	color: var(--tertiary-color);
 	width: 50%;
-}
+} */
 
-.contact-address a {
+/* .contact-address a {
 	color: cornflowerblue;
-}
-/*,,'===D=I=V=I=D=I=N=G===L=I=N=E=== === ===*/
+} */
 
-.my-contact-form Button {
+/* .my-contact-form Button {
 	background-color: #0f117a;
 	box-shadow: 0 9px #1005;
 	width: 150px;
 	height: 75px;
-}
-.my-contact-form Button:hover {
+} */
+/* .my-contact-form Button:hover {
 	background-color: #3e8e41;
-}
-.my-contact-form Button:active {
+} */
+/* .my-contact-form Button:active {
 	background-color: #3e8e41;
 	box-shadow: 0 5px #555;
 	transform: translateY(4px);
-}
+} */

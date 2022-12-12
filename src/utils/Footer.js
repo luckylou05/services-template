@@ -12,7 +12,7 @@ const Footer = () => {
 		<Container
 			as='footer'
 			fluid={true}
-			className='bg-kulay2 text-kulay1 p-5'>
+			className='bg-color2 text-color1 p-5'>
 			<Row>
 				<Col>
 					<Nav
@@ -66,11 +66,11 @@ const Footer = () => {
 						</Nav.Link>
 					</Nav>
 				</Col>
-				<Col className='my-auto text-kulay1'>
+				<Col className='my-auto text-color1'>
 					<Nav.Link
 						as={NavLink}
 						to='/'>
-						<h4 className='pb-3 text-kulay3'>Company Name Services</h4>
+						<h4 className='pb-3 text-color3'>Business Name</h4>
 					</Nav.Link>
 					<p className='pb-1'>Copyright ©️ 2022</p>
 					<p>All Rights Reserved</p>

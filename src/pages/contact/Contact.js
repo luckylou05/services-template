@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import ContactForm from '../../utils/ContactForm';
-import './Contact.css';
 
 const Contact = () => {
 	/*=== google map iframe embedded from google maps ===*/
@@ -29,16 +28,16 @@ const Contact = () => {
 					className='mt-5'
 					size={12}
 					lg={12}>
-					<h1>Contact Us</h1>
+					<h1 className='shadow-text-black'>Contact Us</h1>
 					<hr className='mx-auto w-25' />
 				</Col>
 			</Row>
 
-			<Row className='bg-kulay2 mb-5 contact-address mx-auto text-kulay1 w-75'>
+			<Row className='bg-color2 mb-5 contact-address mx-auto text-color1 w-75 shadow-lg '>
 				<Col
 					as={'address'}
-					className='mt-3 lh-lg text-center'>
-					<h2 className='mt-3'>Company Name</h2>
+					className='mt-3 lh-lg text-center lead fw-semibold font-monospace'>
+					<h2 className='mt-3 text-color3 shadow-text-black'>Business Name</h2>
 
 					<p className=''>Address Here</p>
 
@@ -46,13 +45,13 @@ const Contact = () => {
 
 					<a
 						href='mailto:@gmail.com'
-						className='mx-auto'>
+						className='mx-auto text-color5'>
 						your-email@email.com
 					</a>
 					<br />
 					<a
 						href='tel:000'
-						className='mx-auto'>
+						className='mx-auto text-color5'>
 						555-555-5555
 					</a>
 				</Col>

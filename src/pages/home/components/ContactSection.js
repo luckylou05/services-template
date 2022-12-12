@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
 
 import ContactForm from '../../../utils/ContactForm';
-import imageImg from '../../../assets/images/services.png';
+// import logo from '../../../../src/logo.svg';
+import logo from '../../../assets/images/services.png';
 
 const ContactSection = () => {
 	return (
@@ -13,22 +14,26 @@ const ContactSection = () => {
 			as='section'
 			className='mb-5 home-contact-section'>
 			<Row className='mt-5'>
-				<Col className='display-6 col-12 col-md-6 text-center'>
-					<h2 className='shadow-text-itim'>Request Your Service Today!</h2>
-					<p className='lead'>Fill the form below and we'll contact you in no time!</p>
-					<hr className='mx-auto w-50' />
+				<Col
+					xs={12}
+					lg={6}
+					className='display-6 text-center'>
+					<h2 className='shadow-text-black'>Request Your Service Today!</h2>
+					<p className='lead text-color5'>Fill the form below and we'll contact you in no time!</p>
+					<hr className='mx-auto w-50 border-color2 opacity-75' />
 					<ContactForm />
 				</Col>
 				<Col className='text-center mt-5'>
 					<Figure className=''>
 						<Figure.Image
-							width={171}
-							height={180}
-							alt='171x180'
-							src={imageImg}
-							className='rounded-circle shadow-lg'
+							style={{ width: '300px', height: '300px' }}
+							alt='logo'
+							src={logo}
+							className='rounded-circle shadow-lg big-logo placeholder-wave'
 						/>
-						<Figure.Caption className=''>Nulla vitae elit libero, a pharetra augue mollis interdum.</Figure.Caption>
+						<Figure.Caption className='text-color5 mt-3'>
+							<em className='fs-3'>Since 1969</em>
+						</Figure.Caption>
 					</Figure>
 				</Col>
 			</Row>
