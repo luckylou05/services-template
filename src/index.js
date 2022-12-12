@@ -11,6 +11,7 @@ import About from './pages/about/About';
 import Services from './pages/services/Services';
 import Services2 from './pages/services/Services2';
 import Contact from './pages/contact/Contact';
+import FAQ from './pages/faq/FAQ';
 import Reviews from './pages/reviews/Reviews';
 // import logo from './logo.svg';
 import reportWebVitals from './reportWebVitals';
@@ -41,6 +42,10 @@ root.render(
 				<Route
 					path='contact'
 					element={<Contact />}
+				/>
+				<Route
+					path='faq'
+					element={<FAQ />}
 				/>
 				<Route
 					path='reviews'

@@ -5,7 +5,9 @@ import Col from 'react-bootstrap/Col';
 
 const FAQ = () => {
 	return (
-		<Container className=''>
+		<Container
+			className=''
+			style={{ height: '1000px' }}>
 			<Row>
 				<Col></Col>
 			</Row>
@@ -18,3 +20,5 @@ const FAQ = () => {
 		</Container>
 	);
 };
+
+export default FAQ;

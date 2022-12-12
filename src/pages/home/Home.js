@@ -14,13 +14,11 @@ export const Home = () => {
 		<Container
 			as='main'
 			fluid={true}
-			className='px-0'>
+			className='mx-auto text-center g-0'>
 			<HeroSlides />
 			<ServicesSection />
 			{/* <ReviewsSlider /> */}
-			<hr className='' />
 			<AboutSection />
-			<hr className='' />
 			<ContactSection />
 		</Container>
 	);
